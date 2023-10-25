@@ -3,6 +3,8 @@ import Column from '../Column/Column';
 import ColumnForm from '../ColumnForm/ColumnForm';
 import { useSelector } from 'react-redux';
 import { getAllColumns} from '../../redux/store';
+// action creators
+export const addColumn = payload => ({ type: 'ADD_COLUMN', payload });
 
 const List = () => {
 const columns = useSelector(getAllColumns);
