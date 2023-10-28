@@ -1,0 +1,15 @@
+
+@import '../../styles/settings.scss';
+.nav {
+    background-color: darken($color-dark, 3%);
+    display :flex;
+    justify-content: space-between;
+}
+ a {
+    font-size: 24px;
+    color: $color-light;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+
+}
