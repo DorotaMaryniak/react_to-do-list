@@ -5,12 +5,15 @@ import { useSelector } from 'react-redux';
 import { getAllColumns} from '../../redux/store';
 import { getListById } from '../../redux/store';
 import { getColumnsByList } from '../../redux/store';
+import { useParams } from 'react-router';
 // action creators
 export const addColumn = payload => ({ type: 'ADD_COLUMN', payload });
 
+
 const List = () => {
-const columns = useSelector(columns => getColumnsByList(columns,1));
-const listData = useSelector (lists=> getListById(lists,1));
+   const {listId} = useParams();
+   const columns = useSelector(columns => getColumnsByList(columns,listId));
+const listData = useSelector (lists=> getListById(lists,listId));
 
 return(
  <div className={styles.list}>
