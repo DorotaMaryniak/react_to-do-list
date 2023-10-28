@@ -12,7 +12,6 @@ const dispatch = useDispatch();
 const handleSubmit = e => {
     e.preventDefault();
     dispatch(addCard( {title, columnId:props.columnId}));
-     //wywolanie funkcji otrzymanej od parametru action w List, przekazuje jej inf co było w input value
     setTitle('');
     }
 
