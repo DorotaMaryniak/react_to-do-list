@@ -13,3 +13,19 @@
     font-weight: bold;
 
 }
+
+
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: ($base-size * 2);
+  list-style-type: none;
+}
+
+.linkActive {
+    color: $color-warning;
+
+}
