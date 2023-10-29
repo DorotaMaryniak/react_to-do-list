@@ -17,11 +17,8 @@
     border: none;
 }
 
-i {
-    transition: $transition;
-
-    &.isFavorite {
+.isFavorite {
       color: $color-warning;
       transform: scale(1.2);
     }
-  }
+
