@@ -6,6 +6,7 @@ import {useSelector} from 'react-redux';
 
 const Favorite=()=>{
     const favoriteCards = useSelector(state => getFavoriteCards(state));
+   if (favoriteCards.lenght>0){
     return(
         <div>
         <PageTitle>Favorite</PageTitle>
@@ -15,7 +16,17 @@ const Favorite=()=>{
             </ul>
             </article>
         </div>
-    )
+    );}
+    else{
+        return (
+            <div>
+            <PageTitle>Favorite</PageTitle>
+            <h1>No cards...</h1>
+            </div>
+
+        )
+
+    }
 }
 
 export default Favorite;
