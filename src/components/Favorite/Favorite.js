@@ -6,7 +6,8 @@ import {useSelector} from 'react-redux';
 
 const Favorite=()=>{
     const favoriteCards = useSelector(state => getFavoriteCards(state));
-   if (favoriteCards.lenght>0){
+  console.log('favoriteCrds', favoriteCards)
+    if (favoriteCards.length >0){
     return(
         <div>
         <PageTitle>Favorite</PageTitle>
