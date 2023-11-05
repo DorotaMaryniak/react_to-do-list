@@ -2,6 +2,13 @@
   @use "sass:math";
 @import '../../styles/settings.scss';
 
+.favorite {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .column {
   flex-shrink: 0;
   width: calc(33% - 12px);
@@ -11,6 +18,7 @@
   border-radius: $radius;
   box-shadow: 0 math.div($base-size, 4) 0 rgba(0,0,0,0.3);
   color: $color-dark;
+
 
   &:last-child {
     margin: 0 0 $base-size 0;

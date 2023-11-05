@@ -16,8 +16,10 @@ const Card = props => {
     return (
 
              <li className={styles.card}>{props.title}
+             <div>
              <button onClick = {handleOnClick} className={styles.button} ><i className={clsx("fa fa-star-o", props.isFavorite && styles.isFavorite)}></i></button>
              <button onClick = {handleRemove} className = {styles.button}><i className="fa fa-trash"/></button>
+             </div>
              </li>
              )
 

@@ -4,7 +4,7 @@
     background-color: darken($color-dark, 3%);
     display :flex;
     justify-content: space-between;
-}
+
  a {
     font-size: 24px;
     color: $color-light;
@@ -28,4 +28,5 @@ ul {
 .linkActive {
     color: $color-warning;
 
+}
 }

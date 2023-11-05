@@ -9,7 +9,7 @@ const Favorite=()=>{
   console.log('favoriteCrds', favoriteCards)
     if (favoriteCards.length >0){
     return(
-        <div>
+        <div className={styles.favorite}>
         <PageTitle>Favorite</PageTitle>
         <article className={styles.column}>
         <ul className={styles.cards}>
@@ -20,7 +20,7 @@ const Favorite=()=>{
     );}
     else{
         return (
-            <div>
+            <div className={styles.favorite}>
             <PageTitle>Favorite</PageTitle>
             <h1>No cards...</h1>
             </div>
